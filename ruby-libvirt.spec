@@ -1,4 +1,5 @@
 Summary:	Ruby bindings for libvirt
+Summary(pl.UTF-8):	Wiązania języka Ruby do biblioteki libvirt
 Name:		ruby-libvirt
 Version:	0.4.0
 Release:	1
@@ -16,6 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Ruby bindings for libvirt.
+
+%description -l pl.UTF-8
+Wiązania języka Ruby do biblioteki libvirt.
 
 %prep
 %setup -q
@@ -38,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README
 %{ruby_vendorlibdir}/libvirt.rb
-%{ruby_vendorarchdir}/_libvirt.so
+%attr(755,root,root) %{ruby_vendorarchdir}/_libvirt.so
