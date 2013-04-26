@@ -10,6 +10,7 @@ BuildRequires:	libvirt-devel >= 0.4.0
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
 BuildRequires:	ruby-devel
+BuildRequires:	ruby-rubygems
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
