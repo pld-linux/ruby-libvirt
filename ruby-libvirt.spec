@@ -5,6 +5,7 @@ Release:	1
 License:	LGPL v2+
 Group:		Development/Languages
 Source0:	http://libvirt.org/ruby/download/%{name}-%{version}.tgz
+# Source0-md5:	868a8ba57b6a699f443fc2a7a3f7374b
 URL:		http://libvirt.org/ruby/
 BuildRequires:	libvirt-devel >= 0.4.0
 BuildRequires:	rpm-rubyprov
