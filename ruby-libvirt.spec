@@ -1,18 +1,20 @@
 Summary:	Ruby bindings for libvirt
 Summary(pl.UTF-8):	Wiązania języka Ruby do biblioteki libvirt
 Name:		ruby-libvirt
-Version:	0.7.1
-Release:	2
+Version:	0.8.2
+Release:	1
 License:	LGPL v2+
 Group:		Development/Languages
-Source0:	http://libvirt.org/ruby/download/%{name}-%{version}.tgz
-# Source0-md5:	39cf9767a6277b8e99409a1b7f7c5d9a
-URL:		http://libvirt.org/ruby/
-BuildRequires:	libvirt-devel >= 0.4.0
+Source0:	https://download.libvirt.org/ruby/%{name}-%{version}.tgz
+# Source0-md5:	f518c86afd82747ab744c5fb8437d478
+URL:		https://libvirt.org/ruby/
+BuildRequires:	libvirt-devel >= 2.0.0
+BuildRequires:	pkgconfig
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
 BuildRequires:	ruby-devel
 BuildRequires:	ruby-rubygems
+Requires:	libvirt >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
